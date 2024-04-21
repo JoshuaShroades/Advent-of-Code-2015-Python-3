@@ -1,5 +1,4 @@
 import os
-from hashlib import md5
 
 fileDirectory = os.path.dirname(os.path.realpath(__file__))
 inputFilePath = os.path.join(fileDirectory, "input.txt")
