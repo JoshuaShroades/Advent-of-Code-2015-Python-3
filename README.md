@@ -16,3 +16,5 @@ Day 4:
 Day 5:  
 &nbsp;&nbsp;Part 1: 3.12 ms  
 &nbsp;&nbsp;Part 2: 5.96 ms  
+Day 6:  
+&nbsp;&nbsp;Part 1: 1,911.23 ms  
