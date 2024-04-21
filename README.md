@@ -15,3 +15,4 @@ Day 4:
 &nbsp;&nbsp;Part 2: 17,852.0 ms  
 Day 5:  
 &nbsp;&nbsp;Part 1: 12.0 ms  
+&nbsp;&nbsp;Part 2: 16.5 ms  
