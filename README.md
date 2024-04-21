@@ -2,17 +2,17 @@ My solutions for [Advent of Code 2015](https://adventofcode.com/2015), written i
 
 ### Runtimes:  
 Day 1:  
-&nbsp;&nbsp;Part 1: 2.5 ms  
-&nbsp;&nbsp;Part 2: 12.0 ms  
+&nbsp;&nbsp;Part 1: 0.18 ms  
+&nbsp;&nbsp;Part 2: 9.25 ms  
 Day 2:  
-&nbsp;&nbsp;Part 1: 4.5 ms  
-&nbsp;&nbsp;Part 2: 4.5 ms  
+&nbsp;&nbsp;Part 1: 1.66 ms  
+&nbsp;&nbsp;Part 2: 1.53 ms  
 Day 3:  
-&nbsp;&nbsp;Part 1: 6.0 ms  
-&nbsp;&nbsp;Part 2: 8.0 ms  
+&nbsp;&nbsp;Part 1: 2.39 ms  
+&nbsp;&nbsp;Part 2: 4.37 ms  
 Day 4:  
-&nbsp;&nbsp;Part 1: 515.0 ms  
-&nbsp;&nbsp;Part 2: 17,852.0 ms  
+&nbsp;&nbsp;Part 1: 482.73 ms  
+&nbsp;&nbsp;Part 2: 16,575.13 ms  
 Day 5:  
-&nbsp;&nbsp;Part 1: 12.0 ms  
-&nbsp;&nbsp;Part 2: 16.5 ms  
+&nbsp;&nbsp;Part 1: 3.12 ms  
+&nbsp;&nbsp;Part 2: 5.96 ms  
