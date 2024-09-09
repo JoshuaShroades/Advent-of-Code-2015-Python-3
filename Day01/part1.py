@@ -6,8 +6,9 @@ inputFilePath = os.path.join(fileDirectory, "input.txt")
 with open(inputFilePath) as inputFile:
 	line = inputFile.readline()
 
-upCount = line.count("(")
-downCount = line.count(")")
-finalFloor = upCount - downCount
+def main():
+	upCount = line.count("(")
+	downCount = line.count(")")
+	finalFloor = upCount - downCount
 
-print(finalFloor)
+	return finalFloor

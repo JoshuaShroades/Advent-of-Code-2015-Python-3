@@ -3,36 +3,37 @@ import os
 fileDirectory = os.path.dirname(os.path.realpath(__file__))
 inputFilePath = os.path.join(fileDirectory, "input.txt")
 
-VOWELS = "aeiou"
-BAD_STRINGS = ["ab", "cd", "pq", "xy"]
-
 with open(inputFilePath) as inputFile:
 	strings = [line[:-1] for line in inputFile]
 
-niceStringCount = 0
+def main():
+	VOWELS = "aeiou"
+	BAD_STRINGS = ["ab", "cd", "pq", "xy"]
 
-for string in strings:
-	if(any(badString in string for badString in BAD_STRINGS)):
-		continue
+	niceStringCount = 0
 
-	vowelCount = 0
+	for string in strings:
+		if(any(badString in string for badString in BAD_STRINGS)):
+			continue
 
-	for vowel in VOWELS:
-		vowelCount += string.count(vowel)
+		vowelCount = 0
 
-	if(vowelCount < 3):
-		continue
+		for vowel in VOWELS:
+			vowelCount += string.count(vowel)
 
-	doubleChar = False
+		if(vowelCount < 3):
+			continue
 
-	for i in range(len(string)-1):
-		char = string[i]
+		doubleChar = False
 
-		if(char == string[i+1]):
-			doubleChar = True
-			break
+		for i in range(len(string)-1):
+			char = string[i]
 
-	if(doubleChar):
-		niceStringCount += 1
+			if(char == string[i+1]):
+				doubleChar = True
+				break
 
-print(niceStringCount)
+		if(doubleChar):
+			niceStringCount += 1
+
+	return niceStringCount
