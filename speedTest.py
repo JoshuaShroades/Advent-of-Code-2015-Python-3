@@ -15,6 +15,7 @@ import Day07.part1 as A07
 import Day07.part2 as B07
 import Day08.part1 as A08
 import Day08.part2 as B08
+import Day09.part1 as A09
 
 def speedTest(func):
 	times = []
@@ -28,19 +29,20 @@ def speedTest(func):
 	print("\n" + func.__name__ + ": " + str(value))
 	print("Average time (ms): " + str(round(sum(times) / len(times) * 1000, 2)))
 
-speedTest(A01)
-speedTest(B01)
-speedTest(A02)
-speedTest(B02)
-speedTest(A03)
-speedTest(B03)
-speedTest(A04)
-speedTest(B04)
-speedTest(A05)
-speedTest(B05)
-speedTest(A06)
-speedTest(B06)
-speedTest(A07)
-speedTest(B07)
-speedTest(A08)
-speedTest(B08)
+# speedTest(A01)
+# speedTest(B01)
+# speedTest(A02)
+# speedTest(B02)
+# speedTest(A03)
+# speedTest(B03)
+# speedTest(A04)
+# speedTest(B04)
+# speedTest(A05)
+# speedTest(B05)
+# speedTest(A06)
+# speedTest(B06)
+# speedTest(A07)
+# speedTest(B07)
+# speedTest(A08)
+# speedTest(B08)
+speedTest(A09)
