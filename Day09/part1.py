@@ -6,11 +6,13 @@ inputFilePath = os.path.join(fileDirectory, "input.txt")
 with open(inputFilePath) as inputFile:
 	lines = [line[:-1] for line in inputFile]
 
-locations = set()
-distances = {}
-trips = []
-
 def main():
+	global locations
+	locations = set()
+
+	global distances
+	distances = {}
+
 	for line in lines:
 		locationAB, distance = line.split(" = ")
 		locationA, locationB = locationAB.split(" to ")
@@ -21,6 +23,9 @@ def main():
 	
 	global shortestLength
 	shortestLength = sum(distances.values())
+
+	global trips
+	trips = []
 	
 	for startingLocation in locations:
 		for distance in distances:
