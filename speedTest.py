@@ -46,5 +46,5 @@ def speedTest(func):
 # speedTest(B07)
 # speedTest(A08)
 # speedTest(B08)
-# speedTest(A09)
-speedTest(B09)
+speedTest(A09)
+# speedTest(B09)

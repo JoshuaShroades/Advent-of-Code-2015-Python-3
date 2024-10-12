@@ -19,6 +19,9 @@ def main():
 		distance = int(distance)
 		distances[(locationA, locationB)] = distance
 	
+	global shortestLength
+	shortestLength = sum(distances.values())
+	
 	for startingLocation in locations:
 		for distance in distances:
 			if(startingLocation == distance[0]):
@@ -26,7 +29,6 @@ def main():
 			if(startingLocation == distance[1]):
 				step([], distance[1])
 
-	shortestLength = sum(distances.values())
 	for trip in trips:
 		length = tripLength(trip)
 		if(length < shortestLength):
@@ -36,19 +38,23 @@ def main():
 	
 
 def step(history:list, destination):
+	global shortestLength
 	history.append(destination)
-	if(len(history) == len(locations) and history not in trips):
-		trips.append(history)
-	else:
-		validTrips = [distance for distance in distances if destination in distance]
-		validDestinations = set()
-		for trip in validTrips:
-			if(trip[0] not in history):
-				validDestinations.add(trip[0])
-			if(trip[1] not in history):
-				validDestinations.add(trip[1])
-		for validDestination in validDestinations:
-			step(history.copy(), validDestination)
+	if(tripLength(history.copy()) <= shortestLength):
+		if(len(history) == len(locations) and history not in trips):
+			trips.append(history)
+			if(tripLength(history.copy()) < shortestLength):
+				shortestLength = tripLength(history.copy())
+		else:
+			validTrips = [distance for distance in distances if destination in distance]
+			validDestinations = set()
+			for trip in validTrips:
+				if(trip[0] not in history):
+					validDestinations.add(trip[0])
+				if(trip[1] not in history):
+					validDestinations.add(trip[1])
+			for validDestination in validDestinations:
+				step(history.copy(), validDestination)
 
 def tripLength(trip:list) -> int:
 	totalLength = 0

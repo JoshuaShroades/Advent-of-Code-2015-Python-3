@@ -26,5 +26,5 @@ Day 8:
 &nbsp;&nbsp;Part 1: 0.81 ms  
 &nbsp;&nbsp;Part 2: 0.19 ms  
 Day 9:  
-&nbsp;&nbsp;Part 1: 121,526.49 ms  
+&nbsp;&nbsp;Part 1: 4,705.31 ms  
 &nbsp;&nbsp;Part 2: 123,105.75 ms  
