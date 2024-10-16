@@ -30,3 +30,4 @@ Day 9:
 &nbsp;&nbsp;Part 2: 123,105.75 ms  
 Day 10:  
 &nbsp;&nbsp;Part 1: 374.85 ms  
+&nbsp;&nbsp;Part 2: 10,821.07 ms  
