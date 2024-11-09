@@ -33,3 +33,4 @@ Day 10:
 &nbsp;&nbsp;Part 2: 10,821.07 ms  
 Day 11:  
 &nbsp;&nbsp;Part 1: 1,023.66 ms  
+&nbsp;&nbsp;Part 2: 5,025.93 ms  
