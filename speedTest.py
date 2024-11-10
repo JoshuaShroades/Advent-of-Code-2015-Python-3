@@ -22,6 +22,7 @@ import Day10.part2 as B10
 import Day11.part1 as A11
 import Day11.part2 as B11
 import Day12.part1 as A12
+import Day12.part2 as B12
 
 def speedTest(func):
 	times = []
@@ -57,4 +58,5 @@ def speedTest(func):
 # speedTest(B10)
 # speedTest(A11)
 # speedTest(B11)
-speedTest(A12)
+# speedTest(A12)
+speedTest(B12)
